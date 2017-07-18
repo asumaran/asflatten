@@ -26,6 +26,4 @@ var flatten = function(arr) {
   return result;
 };
 
-console.log(flatten([6, 1, 2, [5], 4]));
-
 module.exports = flatten;
