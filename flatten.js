@@ -1,21 +1,25 @@
-var isArray = function(arr){
+function isArray(arr) {
   return arr instanceof Array;
 }
 
-var flatten = function(arr) {
+function flatten(arr) {
   var result = [];
+  var i;
+  var j;
+  var current;
+  var tmpArr;
 
   if (!isArray(arr)) {
-    return;
+    return false;
   }
 
-  for (var i = 0; i < arr.length; i++)  {
-    var current = arr[i];
+  for (i = 0; i < arr.length; i += 1) {
+    current = arr[i];
 
     if (isArray(current)) {
-      var tmpArr = flatten(current);
+      tmpArr = flatten(current);
 
-      for (var j = 0; j < tmpArr.length; j++) {
+      for (j = 0; j < tmpArr.length; j += 1) {
         result.push(tmpArr[j]);
       }
     } else {
@@ -24,6 +28,6 @@ var flatten = function(arr) {
   }
 
   return result;
-};
+}
 
 module.exports = flatten;

@@ -1,10 +1,7 @@
 var flatten = require('../flatten');
 
-describe('flatten method', function() {
-  it('should flatten arrays', function(){
-    var src = [1, [2]];
-    var result = flatten(src);
-
+describe('flatten method', function () {
+  it('should flatten arrays', function () {
     expect(flatten([])).toEqual([]);
     expect(flatten([1])).toEqual([1]);
     expect(flatten([1, 2])).toEqual([1, 2]);
