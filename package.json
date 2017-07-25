@@ -2,7 +2,7 @@
   "name": "asflatten",
   "version": "1.0.1",
   "description": "My super awesome flatten method",
-  "main": "flatten.js",
+  "main": "src/flatten.js",
   "scripts": {
     "test": "jasmine",
     "eslint": "eslint ."

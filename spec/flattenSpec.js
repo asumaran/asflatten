@@ -1,4 +1,4 @@
-var flatten = require('../flatten');
+var flatten = require('../src/flatten');
 
 describe('flatten method', function () {
   it('should flatten arrays', function () {
