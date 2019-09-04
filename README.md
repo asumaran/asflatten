@@ -5,3 +5,5 @@ To run tests
 ```
 npm test
 ```
+
+Trigger GitHub Actions
